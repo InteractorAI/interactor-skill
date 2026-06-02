@@ -13,7 +13,7 @@ If the environment has a package-manager policy, follow that policy.
 
 Verification steps:
 
-- Check if the cli is already installed.
+- Check if the CLI is already installed.
 - If not, install it.
 - If you encountered an issue during installation, ensure you configure your environment correctly and try again.
 - Only if installation didn't work: read `references/raw-api.md`.
@@ -32,9 +32,9 @@ The command installs the skill into `<skills-root-path>/interactor`. Use `--forc
 
 Login:
 
-\`\`\`bash
+```bash
 interactor-agent auth login --client-id <agent-or-tool-identifier>
-\`\`\``
+```
 
 The CLI prints the owner approval URL. If Enter is pressed in an interactive terminal, it opens the URL in the browser. The owner signs in and approves access in the browser.
 
