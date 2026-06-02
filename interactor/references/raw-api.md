@@ -169,7 +169,7 @@ Authorization: Bearer <access-token>
 <semantic-interactor-patch-payload>
 ```
 
-Omitted fields remain unchanged. Arrays replace/upsert their corresponding lists; preserve ids for existing items that should be edited or retained.
+Before preparing a patch body, read `references/patching-behavior.md`.
 
 ## Safe API Behavior
 

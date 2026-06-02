@@ -18,6 +18,16 @@ Verification steps:
 - If you encountered an issue during installation, ensure you configure your environment correctly and try again.
 - Only if installation didn't work: read `references/raw-api.md`.
 
+## Install This Skill
+
+Install the Interactor skill from GitHub into a local skills root:
+
+```bash
+interactor-agent skills install <skills-root-path>
+```
+
+The command installs the skill into `<skills-root-path>/interactor`. Use `--force` only when you want to replace an existing local copy.
+
 ## Authentication
 
 Login:
@@ -94,7 +104,7 @@ Patch from stdin:
 interactor-agent interactors patch <interactor-id> --stdin < ./patch.json
 ```
 
-Patch bodies are partial semantic Interactor objects. Omitted fields remain unchanged. Object fields merge into the current semantic state. Arrays are replacement/upsert surfaces: include ids to edit existing items, omit ids to create new items, and omit existing items from the array to delete them.
+Before preparing a patch body, read `references/patching-behavior.md`.
 
 Read-only values are ignored.
 

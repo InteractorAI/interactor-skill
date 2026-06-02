@@ -72,5 +72,6 @@ If you need to keep backups, read `references/backups.md`.
 - `references/interactor-design.md`: best practices on how to design the interactor.
 - `references/create-interactor.md`: checklist for interactor creation.
 - `references/edit-interactor.md`: checklist for interactor editing.
+- `references/patching-behavior.md`: rules for how patch payloads merge objects, replace/upsert arrays, preserve ids, and avoid accidental deletions.
 - `references/backups.md`: instructions on how to keep backups.
 - `references/upload-media.md`: instructions on how to upload media.
