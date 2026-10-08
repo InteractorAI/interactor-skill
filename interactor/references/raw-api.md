@@ -171,6 +171,42 @@ Authorization: Bearer <access-token>
 
 Before preparing a patch body, read `references/patching-behavior.md`.
 
+The root patch endpoint remains available for intentional full import/replace
+operations. List fields use replacement/upsert behavior.
+
+### Module Items
+
+Prefer item endpoints for individual changes. `<module-name>` must be one of:
+`knowledge`, `services`, `team`, `faq`, `forms`, `greeting`, `shortcutsMenu`,
+`products`, `scheduler`, `smartLinks`, or `alerts`.
+
+Load the exact create and patch schemas for a module:
+
+```http
+GET https://api.interactor.ai/api/agent/v1/schemas/modules/<module-name>/items
+```
+
+The response contains `createSchema`, `patchSchema`, and `supportsReorder`.
+
+```http
+GET    https://api.interactor.ai/api/agent/v1/interactors/<interactor-id>/extensions/<module-name>/items
+POST   https://api.interactor.ai/api/agent/v1/interactors/<interactor-id>/extensions/<module-name>/items
+PATCH  https://api.interactor.ai/api/agent/v1/interactors/<interactor-id>/extensions/<module-name>/items/<item-id>
+DELETE https://api.interactor.ai/api/agent/v1/interactors/<interactor-id>/extensions/<module-name>/items/<item-id>
+PUT    https://api.interactor.ai/api/agent/v1/interactors/<interactor-id>/extensions/<module-name>/items/reorder
+```
+
+- POST accepts one item without an id.
+- PATCH accepts only the fields that need to change. Nested object fields are
+  partial where supported; a form's `schema` field is replaced as a whole.
+- DELETE removes the identified item.
+- PUT reorder accepts `{"ids":[...]}` with every current item id exactly once.
+  Reorder is supported for `services`, `team`, `faq`, `greeting`,
+  `shortcutsMenu`, `products`, `scheduler`, and `alerts`.
+
+Use the semantic ids returned by GET exactly as provided. Read
+`references/item-resources.md` for the complete operating workflow.
+
 ## Safe API Behavior
 
 - Store tokens using the host platform's secret storage.

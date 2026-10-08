@@ -19,7 +19,15 @@ Follow next steps strictly:
 - The schema or current state shows that the proposed edit does not fit the current Interactor design.
 - When pausing, explain the concern, trade-off, and smallest proposed adjustment.
 
-7. Prepare the patch carefully. Read `references/patching-behavior.md` before writing or sending any patch.
+7. Choose the narrowest write operation:
+
+   - For an individual item create, update, delete, or reorder, use the item
+     resource workflow in `references/item-resources.md`.
+   - For module settings or an intentional full import/replace, use the root
+     patch workflow in `references/patching-behavior.md`.
+   - If CLI 0.1.0 or newer is unavailable, follow the older-CLI fallback in
+     `references/item-resources.md`.
+
 8. Read the updated interactor back and show the overview to the user.
 
 ## Unsupported features
@@ -32,4 +40,5 @@ If you can't find a way, instruct the owner to explore interactor admin UI.
 
 - `references/interactor-design.md`: how to design the interactor.
 - `references/cli.md`: how to work with platform api.
+- `references/item-resources.md`: recommended item-level changes and older-CLI fallback.
 - `references/patching-behavior.md`: how patch payloads merge objects and replace/upsert arrays.
