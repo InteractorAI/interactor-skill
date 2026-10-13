@@ -19,6 +19,7 @@ Interactor is a platform where business owners (or individuals) can create and m
 ## First steps
 
 - Install CLI to work with the platform. Read `references/cli.md`.
+- Prefer the newest CLI version.
 - Connect to Interactor platform. If not logged in, finish the OAuth flow.
 - Explore all the references in this skill. Give the user a complete overview of what you can do, propose next steps.
 
@@ -44,6 +45,10 @@ Before you start creating a new Interactor, read `references/create-interactor.m
 ## Interactor editing
 
 Before you start editing an Interactor, read `references/edit-interactor.md`.
+
+For changes to individual module items, use the item resource commands described
+in `references/item-resources.md`. They are the recommended way to create, edit,
+delete, or reorder items without replacing the complete list.
 
 ## Designing Interactors
 
@@ -73,10 +78,11 @@ If you need to keep backups, read `references/backups.md`.
 
 ## References
 
-- `references/cli.md`: how to work with platform API.
+- `references/cli.md`: how to work with platform api.
 - `references/interactor-design.md`: best practices on how to design the Interactor.
 - `references/create-interactor.md`: checklist for Interactor creation.
 - `references/edit-interactor.md`: checklist for Interactor editing.
+- `references/item-resources.md`: recommended item-level API and CLI workflows, supported modules, and older-CLI fallback.
 - `references/patching-behavior.md`: rules for how patch payloads merge objects, replace/upsert arrays, preserve ids, and avoid accidental deletions.
 - `references/backups.md`: instructions on how to keep backups.
 - `references/upload-media.md`: instructions on how to upload media.
