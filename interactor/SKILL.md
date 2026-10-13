@@ -9,7 +9,12 @@ Use this skill to help an agent manage Interactor for a business owner.
 
 ## Platform Overview
 
-Interactor is a platform where business owners (or individuals) can create and manage an AI chat bot called an `interactor`. The interactor talks to customers 24/7, answers common questions about the business, sets up appointments, accepts dynamic forms, searches products, and supports other owner-configured workflows.
+Interactor is a platform where business owners (or individuals) can create and manage an AI chat bot called an Interactor. The Interactor talks to customers 24/7, answers common questions about the business, sets up appointments, accepts dynamic forms, searches products, and supports other owner-configured workflows.
+
+## Brand And Naming
+
+- Always write `Interactor` as a capitalized proper noun in prose, including when referring to one configured instance. Use `Interactors` for the plural.
+- Keep literal command names, package names, URLs, schema IDs, JSON fields, file names, and quoted owner text exactly as written.
 
 ## First steps
 
@@ -26,46 +31,46 @@ Important notes:
 
 Act like a capable operator:
 
-- Keep internal mechanics out of the owner conversation unless requested: do not mention json, payloads, backups, cli, api, http requests, oauth, tokens and other internal technical stuff.
+- Keep internal mechanics out of the owner conversation unless requested: do not mention JSON, payloads, backups, CLI, API, HTTP requests, OAuth, tokens, and other internal technical details.
 - Show summaries of your actions without technical details.
 - Confirm before destructive or meaningfully irreversible changes.
-- Discuss and help user to design interactor that works best for their use case.
+- Discuss and help user to design an Interactor that works best for their use case.
 
 ## Interactor creation
 
-Do not take request to create a new interactor literally. When user wants to create a new interactor, that means they want to set up a new interactor that is designed for their purposes.
+Do not take a request to create a new Interactor literally. When the user wants to create a new Interactor, that means they want to set up a new Interactor that is designed for their purposes.
 
-Before you start creating new interactor read `references/create-interactor.md`.
+Before you start creating a new Interactor, read `references/create-interactor.md`.
 
 ## Interactor editing
 
-Before you start editing new interactor read `references/edit-interactor.md`.
+Before you start editing an Interactor, read `references/edit-interactor.md`.
 
 For changes to individual module items, use the item resource commands described
 in `references/item-resources.md`. They are the recommended way to create, edit,
 delete, or reorder items without replacing the complete list.
 
-## Designing interactors
+## Designing Interactors
 
-Read best practices on how to design a good interactor: `references/interactor-design.md`.
+Read best practices on how to design a good Interactor: `references/interactor-design.md`.
 
 ## Advanced features
 
-Some management features are not available in the api.
+Some management features are not available in the API.
 
 For example:
 
 - Connecting external services or providers (payments, calendars)
 - Seeing customers, appointments, submitted forms
 
-To handle questions or requests on how owner can do some things, you must follow the flow:
+To handle questions or requests on how the owner can do certain things, you must follow the flow:
 
-1. Read the full interactor schema. It includes description for interactor configuration, including read-only fields and sections available to you. You can use the description to handle the request.
-2. If you can't find information, tell the user to explore interactor admin UI.
+1. Read the full Interactor schema. It includes description for Interactor configuration, including read-only fields and sections available to you. You can use the description to handle the request.
+2. If you can't find information, tell the user to trying using Interactor directly.
 
 ## Uploading media
 
-Read `references/upload-media.md` to understand how to upload media to interactor.
+Read `references/upload-media.md` to understand how to upload media to Interactor.
 
 ## Keeping backups
 
@@ -74,9 +79,9 @@ If you need to keep backups, read `references/backups.md`.
 ## References
 
 - `references/cli.md`: how to work with platform api.
-- `references/interactor-design.md`: best practices on how to design the interactor.
-- `references/create-interactor.md`: checklist for interactor creation.
-- `references/edit-interactor.md`: checklist for interactor editing.
+- `references/interactor-design.md`: best practices on how to design the Interactor.
+- `references/create-interactor.md`: checklist for Interactor creation.
+- `references/edit-interactor.md`: checklist for Interactor editing.
 - `references/item-resources.md`: recommended item-level API and CLI workflows, supported modules, and older-CLI fallback.
 - `references/patching-behavior.md`: rules for how patch payloads merge objects, replace/upsert arrays, preserve ids, and avoid accidental deletions.
 - `references/backups.md`: instructions on how to keep backups.

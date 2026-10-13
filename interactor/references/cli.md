@@ -14,7 +14,7 @@ If the environment has a package-manager policy, follow that policy.
 
 Verification steps:
 
-- Check if the cli is already installed.
+- Check if the CLI is already installed.
 - Check its version with `interactor-agent --version`.
 - If not, install it.
 - Upgrade when the installed version is older than 0.1.0.
