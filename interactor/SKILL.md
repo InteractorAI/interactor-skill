@@ -1,6 +1,6 @@
 ---
 name: Interactor
-description: Manage the Interactor platform for business owners and teams. Use this skill whenever the user asks an agent to create, configure, review, update, troubleshoot, or automate an Interactor; work with Interactor CLI authentication or commands; use Interactor management REST endpoints; design customer-facing chat behavior, knowledge, services, forms, menus, products, scheduling, smart links, payments, WhatsApp, contact capture, or alert workflows; or improve an existing Interactor using best practices.
+description: Create, configure, review, troubleshoot, and improve individual Interactors for business owners and teams. Use for an Interactor's configuration, customer-facing conversation behavior, and supported workflows, or for Interactor management CLI/API operations. Do not use for developing, debugging, or fixing the Interactor platform itself, including its application source code; general sales writing; or unrelated website development, payments, WhatsApp, forms, or scheduling tasks.
 ---
 
 # Interactor Platform
