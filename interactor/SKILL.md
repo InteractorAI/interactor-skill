@@ -18,6 +18,23 @@ Interactor is a platform where business owners (or individuals) can create and m
 
 ## First steps
 
+### Website installation and integration handoff
+
+For adding, configuring, troubleshooting, or removing the Interactor widget on a
+website, use the [Interactor Embed skill](https://add.interactor.ai/skill.md).
+It owns website scripts, browser initialization, launch buttons, website form
+handoffs, page-to-chat messages, and browser verification of the integration.
+For website-only requests, follow that skill without performing the management
+setup below.
+
+When a request includes both Interactor configuration and website integration,
+use this skill for the requested configuration, then pass the confirmed public
+Interactor ID or alias to the embed skill for the website work. Use this skill
+again only if the integration requires further requested configuration changes.
+Neither skill covers developing or fixing the Interactor platform itself.
+
+### Platform management setup
+
 - Install CLI to work with the platform. Read `references/cli.md`.
 - Prefer the newest CLI version.
 - Connect to Interactor platform. If not logged in, finish the OAuth flow.
